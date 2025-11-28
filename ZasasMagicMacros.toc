@@ -4,20 +4,29 @@
 ## Version: 1.0
 ## Notes: Magical Macros!
 
+# === Data ===
+src\utils\Rotations.lua
+
 # === Utils ===
 src\utils\AbilityNamesToTexturesMapping.lua
 src\utils\Buffs.lua
-src\utils\Debuffs.lua
 src\utils\Combat.lua
-src\utils\Slots.lua
+src\utils\Config.lua
+src\utils\Debuffs.lua
 src\utils\Abilities.lua
+src\utils\RotationRunner.lua
+src\utils\Setup.lua
+src\utils\Slots.lua
 src\utils\ZMM_MacroBuilder.lua
 src\utils\Setup.lua
 
 # === Paladin ===
 src\classes\paladin\Core.lua
+src\classes\paladin\OneButtonProtection.lua
+src\classes\paladin\OneButtonProtectionAoE.lua
 src\classes\paladin\SealOfRighteousness.lua
 src\classes\paladin\SealOfWisdom.lua
 src\classes\paladin\SmartCrusaderStrike.lua
-src\classes\paladin\OneButtonProtection.lua
-src\classes\paladin\OneButtonProtectionAoE.lua
+
+# === Frames ===
+src\ZMM_Main.lua

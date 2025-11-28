@@ -1,6 +1,11 @@
 Paladin = Paladin or {}
 
 function Paladin:OneButtonProtection()
+    if Config.RunnerMode == "RR" then
+        Paladin:AROneButtonProtection()
+        return
+    end
+
     local crusaderStrike = Abilities:new("Crusader Strike")
     local holyStrike = Abilities:new("Holy Strike")
     local holyShield = Abilities:new("Holy Shield")
@@ -23,4 +28,8 @@ function Paladin:OneButtonProtection()
     end
 
     greaterBlessingOfSanctuary:cast()
+end
+
+function Paladin:AROneButtonProtection()
+    RotationRunner:run( "OneButtonProtection")
 end

@@ -10,6 +10,15 @@ function Abilities:new(name)
 
     local public = {}
 
+    function public.getState()
+        return {
+            isBuffed = public.isBuffed(),
+            timeLeft = public.getBuffTimeLeft(),
+            stacks = public.getBuffApplications(),
+            isInRange = public.isInRange()
+        }
+    end
+
     function public:getAbilityName()
         return abilityName
     end
