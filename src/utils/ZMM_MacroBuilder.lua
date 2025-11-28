@@ -25,6 +25,11 @@ ZMM_Macros = {
         icon = 105,
         body = "/run Paladin:SmartCrusaderStrike()",
     },
+    {
+        name = "ZMM_Hunter",
+        icon = 105,
+        body = "/run Hunter:OneButtonHunterPetPullReset()",
+    },
 }
 
 ZMM_Build = ZMM_Build or {}
@@ -36,8 +41,8 @@ local pendingCreate = false
 
 function builder:GetFreeMacroSlots()
     local numGlobal, numChar = GetNumMacros()
-    local freeGlobal = 18 - numGlobal
-    local freeChar   = 18 - numChar
+    local freeGlobal         = 18 - numGlobal
+    local freeChar           = 18 - numChar
     return freeGlobal, freeChar
 end
 

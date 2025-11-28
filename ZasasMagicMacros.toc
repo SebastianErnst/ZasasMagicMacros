@@ -1,7 +1,7 @@
 ## Interface: 11200
 ## Title: ZasasMagicMacros
 ## Author: Zasamel
-## Version: 1.0
+## Version: 1.0.1
 ## Notes: Magical Macros!
 
 # === Utils ===
@@ -12,7 +12,10 @@ src\utils\Combat.lua
 src\utils\Slots.lua
 src\utils\Abilities.lua
 src\utils\ZMM_MacroBuilder.lua
-src\utils\Setup.lua
+
+# === Hunter ===
+src\classes\hunter\Core.lua
+src\classes\hunter\OneButtonHunterPetPullReset.lua
 
 # === Paladin ===
 src\classes\paladin\Core.lua
