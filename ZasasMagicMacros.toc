@@ -1,7 +1,7 @@
 ## Interface: 11200
 ## Title: ZasasMagicMacros
 ## Author: Zasamel
-## Version: 1.0.1
+## Version: 1.0.2
 ## Notes: Magical Macros!
 
 # === Utils ===

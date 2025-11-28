@@ -1,6 +1,6 @@
 function Hunter:OneButtonHunterPetPullReset()
     CastSpellByName("Furious Howl")
-    if UnitExists("pet") then
+    if UnitExists("pet") and not UnitIsDead("pet") then
         if Buffs:findBuffByTextureName("Ability_Rogue_FeignDeath") then
             CastSpellByName("Eyes of the Beast")
         end
