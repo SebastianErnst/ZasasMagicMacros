@@ -1,7 +1,7 @@
 ## Interface: 11200
 ## Title: ZasasMagicMacros
 ## Author: Zasamel
-## Version: 1.0.3
+## Version: 1.0.4
 ## Notes: Magical Macros!
 
 # === Core ===
@@ -34,3 +34,8 @@ src\rotations\paladin\OneButtonProtectionAoE.lua
 src\rotations\paladin\SealOfRighteousness.lua
 src\rotations\paladin\SealOfWisdom.lua
 src\rotations\paladin\SmartCrusaderStrike.lua
+
+# === Warrior ===
+src\rotations\warrior\Core.lua
+src\rotations\warrior\OneButtonFuryProt.lua
+src\rotations\warrior\OneButtonProt.lua

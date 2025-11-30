@@ -4,36 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeeaaa1b-49a8-41a2-8f00-2cc5940db21e" name="Changes" comment="feat: Add shaman base for enhancement obm">
-      <change afterPath="$PROJECT_DIR$/.emmyrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Core.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/AuraTracker.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/OldAuraTracker.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Slot.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Spell.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Timer.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Timers.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Utils.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rotations/warrior/Core.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rotations/warrior/OneButtonProt.lua" afterDir="false" />
+    <list default="true" id="aeeaaa1b-49a8-41a2-8f00-2cc5940db21e" name="Changes" comment="feat: Refactor scaffolding and how some classes are set up">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZasasMagicMacros.toc" beforeDir="false" afterPath="$PROJECT_DIR$/ZasasMagicMacros.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/hunter/Core.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/hunter/Core.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/hunter/OneButtonHunterPetPullReset.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/hunter/OneButtonHunterPetPullReset.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/paladin/Core.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/paladin/Core.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/paladin/OneButtonProtection.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/paladin/OneButtonProtection.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/paladin/OneButtonProtectionAoE.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/paladin/OneButtonProtectionAoE.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/paladin/SealOfRighteousness.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/paladin/SealOfRighteousness.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/paladin/SealOfWisdom.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/paladin/SealOfWisdom.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/paladin/SmartCrusaderStrike.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/paladin/SmartCrusaderStrike.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/warrior/Warrior_HeroicStrikeQueue.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotations/warrior/OneButtonFuryProt.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Abilities.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/AbilityNamesToTexturesMapping.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/NamesToTexturesMapping.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Buffs.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Buff.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Combat.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Combat.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Debuffs.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Debuff.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Slots.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ZMM_MacroBuilder.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/ZMM_MacroBuilder.lua" afterDir="false" />
-      <change beforePath="E:/projects/wow-api-type-definitions/Interface/FrameXML/CombatFeedback.d.lua" beforeDir="false" afterPath="E:/projects/wow-api-type-definitions/Interface/FrameXML/CombatFeedback.d.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +128,7 @@
       <workItem from="1764263933206" duration="13854000" />
       <workItem from="1764332498353" duration="11433000" />
       <workItem from="1764412889788" duration="34076000" />
-      <workItem from="1764513542937" duration="7652000" />
+      <workItem from="1764513542937" duration="7780000" />
     </task>
     <task id="LOCAL-00001" summary="fix: Delete testcode">
       <option name="closed" value="true" />
@@ -333,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764413260796</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: Refactor scaffolding and how some classes are set up">
+      <option name="closed" value="true" />
+      <created>1764522073074</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1764522073074</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +367,7 @@
     <MESSAGE value="feat: Add condition if pet is called but not revived yet" />
     <MESSAGE value="feat: Add condition to cast feign death only when furious howl is buffed" />
     <MESSAGE value="feat: Add shaman base for enhancement obm" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add shaman base for enhancement obm" />
+    <MESSAGE value="feat: Refactor scaffolding and how some classes are set up" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Refactor scaffolding and how some classes are set up" />
   </component>
 </project>
