@@ -25,7 +25,7 @@ src\modules\Utils.lua
 
 # === Hunter ===
 src\rotations\hunter\Core.lua
-src\rotations\hunter\OneButtonHunterPetPullReset.lua
+src\rotations\hunter\OneButtonPetPullReset.lua
 
 # === Paladin ===
 src\rotations\paladin\Core.lua
