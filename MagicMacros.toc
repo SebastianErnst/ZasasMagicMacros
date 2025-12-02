@@ -16,6 +16,7 @@ src\data\NamesToTexturesMapping.lua
 # === Modules ===
 src\modules\Buff.lua
 src\modules\Combat.lua
+src\modules\CombatLogHandler.lua
 src\modules\Debuff.lua
 src\modules\Slot.lua
 src\modules\Spell.lua
