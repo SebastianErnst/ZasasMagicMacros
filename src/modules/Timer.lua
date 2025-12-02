@@ -1,10 +1,11 @@
 Timer = {}
 Timer.__index = Timer
 
-function Timer:new(key, duration)
-    local public = {}
+function Timer:new(key, duration)    
     local _key = key
     local _duration = duration
+
+    local public = {}
 
     function public:start(callback)
         Timers.active[_key] = {
@@ -29,5 +30,3 @@ function Timer:new(key, duration)
 
     return public
 end
-
-
