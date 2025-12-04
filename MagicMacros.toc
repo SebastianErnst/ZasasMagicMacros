@@ -9,13 +9,14 @@ src\core\Core.lua
 src\core\ZMM_MacroBuilder.lua
 
 # === Data ===
-src\data\NamesToTexturesMapping.lua
+src\data\NamesMapping.lua
 
 # === Frames ===
 
 # === Modules ===
 src\modules\Buff.lua
 src\modules\Combat.lua
+src\modules\CombatLogHandler.lua
 src\modules\Debuff.lua
 src\modules\Slot.lua
 src\modules\Spell.lua

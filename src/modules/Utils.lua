@@ -1,6 +1,33 @@
 Utils = {}
 Utils.__index = Utils
 
+
+function Utils:getSpellInfoByName(name, unit)
+    if unit == "pet" then
+        unit = "pet"
+    end
+
+    if not unit then
+        unit = "player"
+    end   
+
+    local spellId = NamesMapping[unit][name].id
+    local duration = NamesMapping[unit][name].duration
+    local _, rank, icon, minRange, maxRange = SpellInfo(spellId)    
+    
+    icon = Utils:stringSplit(icon, "\\")[3]
+    
+    return {
+        ["id"] = id,
+        ["name"] = name,
+        ["rank"] = rank,
+        ["icon"] = icon,
+        ["minRange"] = minRange,
+        ["maxRange"] = maxRange,
+        ["duration"] = duration
+    }
+end
+
 function Utils:printAllVisibleBuffs(target)
     if not target then
         target = "player"

@@ -2,17 +2,18 @@ Buff = {}
 Buff.__index = Buff
 
 function Buff:new(name)
-    local function getBuffIndexByTextureName(textureName)
-        for i = 1, 32 do
-            if strfind(GetPlayerBuffTexture(i), textureName) then
+    local function getBuffIndexByIcon(icon)
+        for i = 0, 32 do
+            if GetPlayerBuffTexture(i) and strfind(GetPlayerBuffTexture(i), icon) then
                 return i
             end
         end
         return -1
     end
 
-    local textureName = NamesToTexturesMapping[name]
-    local buffIndex = getBuffIndexByTextureName(textureName)
+    local spellInfo = Utils:getSpellInfoByName(name)
+    local icon = spellInfo.icon
+    local buffIndex = getBuffIndexByIcon(icon)
     local buffApplications = GetPlayerBuffApplications(buffIndex)
     local buffTimeLeft = GetPlayerBuffTimeLeft(buffIndex)
 
@@ -33,7 +34,6 @@ function Buff:new(name)
     function public.isActive()
         return buffIndex >= 0
     end
-    
 
     return public
 end

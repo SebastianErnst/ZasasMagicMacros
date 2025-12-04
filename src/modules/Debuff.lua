@@ -3,7 +3,7 @@ Debuff.__index = Debuff
 
 function Debuff:new(name, unit)
     local unit = unit or "target"
-    local function findDebuffIndexByTextureName(textureName)
+    local function findDebuffIndexByIcon(textureName)
         local i = 1
         while UnitDebuff(unit, i) do
             local isSameTexture = strfind(UnitDebuff(unit, i), textureName)
@@ -17,8 +17,11 @@ function Debuff:new(name, unit)
         return -1
     end
 
-    local textureName = NamesToTexturesMapping[name]
-    local debuffIndex = findDebuffIndexByTextureName(textureName)
+    local spellInfo = Utils:getSpellInfoByName(name) 
+    local icon = spellInfo.icon
+    local duration = spellInfo.duration
+    local playerhaste = Utils:getHaste()
+    local debuffIndex = findDebuffIndexByIcon(icon)
 
     local public = {}
     function public.isActive()

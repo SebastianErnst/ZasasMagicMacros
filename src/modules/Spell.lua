@@ -1,13 +1,14 @@
 Spell = {}
 Spell.__index = Spell
 
-function Spell:new(name)
-    local textureName = NamesToTexturesMapping[name]
-    local slotId = Slot:findSlotIndexByTextureName(textureName)
+function Spell:new(name, unit)
+    local spellInfo = Utils:getSpellInfoByName(name)
+    local icon = spellInfo.icon
+    local slotId = Slot:findSlotIndexByIcon(icon)
     local public = {}
 
-    function public:getTextureName()
-        return textureName
+    function public:getIcon()
+        return icon
     end
 
     function public:cast()
@@ -22,14 +23,7 @@ function Spell:new(name)
     end
 
     function public:isInRange()
-        if IsActionInRange(slotId) == 1 then
-            return true
-        else
-            return false
-        end
-
-
-        return false
+        return IsActionInRange(slotId) == 1
     end
 
     return public
