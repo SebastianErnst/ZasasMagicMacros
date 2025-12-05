@@ -7,7 +7,7 @@ function Paladin:SmartCrusaderStrike()
         crusaderStrike:cast()
     end
 
-    if zeal:isActive() and (zeal:getBuffTimeLeft() < 7 or zeal:getBuffApplications() < 3) then
+    if zeal:isActive() and (zeal:getTimeLeft() < 7 or zeal:getStacks() < 3) then
         crusaderStrike:cast()
     else
         holyStrike:cast()

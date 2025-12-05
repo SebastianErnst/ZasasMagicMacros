@@ -15,7 +15,7 @@ function Paladin:OneButtonProtectionAoE()
 
     holyShield:cast()
 
-    if crusaderStrike:getBuffApplications() == 3 then
+    if crusaderStrike:getStacks() == 3 then
         Paladin:SmartCrusaderStrike()
     else
         holyStrike:cast()

@@ -16,7 +16,7 @@ function Paladin:OneButtonProtection()
         return
     end
 
-    if zeal:getBuffApplications() == 3 then
+    if zeal:getStacks() == 3 then
         Paladin:SmartCrusaderStrike()
     end
 
